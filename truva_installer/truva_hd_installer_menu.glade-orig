@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!-- Generated with glade3
+	Version: 3.0.1
+	Date: Fri Jan 26 20:24:53 2007
+	User: root
+	Host: truvalinux
+-->
+<glade-interface>
+  <widget class="GtkWindow" id="truva_install">
+    <property name="visible">True</property>
+    <property name="title">Anatolya Kurulum Yöneticisi</property>
+    <property name="window_position">GTK_WIN_POS_CENTER</property>
+    <child>
+      <widget class="GtkTable" id="main_table">
+        <property name="visible">True</property>
+        <property name="border_width">10</property>
+        <property name="n_rows">5</property>
+        <property name="n_columns">2</property>
+        <property name="row_spacing">10</property>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <widget class="GtkButton" id="gparted">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <signal name="clicked" handler="on_gparted_clicked"/>
+            <child>
+              <widget class="GtkAlignment" id="alignment2">
+                <property name="visible">True</property>
+                <property name="xalign">0,000000</property>
+                <property name="yalign">0,000000</property>
+                <property name="xscale">0,000000</property>
+                <property name="yscale">0,000000</property>
+                <child>
+                  <widget class="GtkHBox" id="hbox2">
+                    <property name="visible">True</property>
+                    <property name="spacing">2</property>
+                    <child>
+                      <widget class="GtkImage" id="image2">
+                        <property name="visible">True</property>
+                        <property name="xalign">0,000000</property>
+                        <property name="yalign">0,000000</property>
+                        <property name="xpad">4</property>
+                        <property name="stock">gtk-convert</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkLabel" id="label2">
+                        <property name="visible">True</property>
+                        <property name="xalign">0,000000</property>
+                        <property name="yalign">0,000000</property>
+                        <property name="ypad">3</property>
+                        <property name="label" translatable="yes">Truva Linux İçin Sabit Diskte Bir Bölüm Oluştur</property>
+                        <property name="use_underline">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="right_attach">2</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
+            <property name="x_options">GTK_FILL</property>
+            <property name="y_options"></property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="exit_button">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="label">gtk-quit</property>
+            <property name="use_stock">True</property>
+            <signal name="clicked" handler="gtk_main_quit"/>
+          </widget>
+          <packing>
+            <property name="right_attach">2</property>
+            <property name="top_attach">4</property>
+            <property name="bottom_attach">5</property>
+            <property name="x_options">GTK_FILL</property>
+            <property name="y_options"></property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="welkom_text">
+            <property name="visible">True</property>
+            <property name="xalign">0,000000</property>
+            <property name="yalign">0,000000</property>
+            <property name="xpad">10</property>
+            <property name="ypad">10</property>
+            <property name="label" translatable="yes">ANATOLYA KURULUM YÖNETİCİSİ
+
+Anatolya Kurulum Yöneticisi'ne hoşgeldiniz. Bu program
+kullanmakta olduğunuz Truva Kurulan Sürümünü
+sabit diskinize kurmanızda yardımcı olacaktır.
+Anatolya Kurulum Yöneticisi hakkında detaylı bilgi için
+http://www.truvalinux.org.tr adresini ziyaret edebilirsiniz.
+Anatolya'yı kullanmadan önce sisteminizin bir yedeğini 
+almanızı öneririz...
+Bu programın kullanılması durumunda her türlü
+problemin sorumluluğu kullanıcıya aittir. 
+Truva Linux Geliştirici Ekibi sorumlu tutulamaz...</property>
+            <property name="justify">GTK_JUSTIFY_CENTER</property>
+          </widget>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
+            <property name="x_options">GTK_FILL</property>
+            <property name="y_options"></property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image6">
+            <property name="visible">True</property>
+            <property name="xalign">0,000000</property>
+            <property name="yalign">0,000000</property>
+            <property name="xpad">4</property>
+            <property name="pixbuf">maskot.gif</property>
+          </widget>
+          <packing>
+            <property name="x_options">GTK_FILL</property>
+            <property name="y_options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="slampp_installation">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <signal name="clicked" handler="on_install_clicked"/>
+            <child>
+              <widget class="GtkAlignment" id="alignment5">
+                <property name="visible">True</property>
+                <property name="xalign">0,000000</property>
+                <property name="yalign">0,000000</property>
+                <property name="xscale">0,000000</property>
+                <property name="yscale">0,000000</property>
+                <child>
+                  <widget class="GtkHBox" id="hbox5">
+                    <property name="visible">True</property>
+                    <property name="spacing">2</property>
+                    <child>
+                      <widget class="GtkImage" id="image7">
+                        <property name="visible">True</property>
+                        <property name="xalign">0,000000</property>
+                        <property name="yalign">0,000000</property>
+                        <property name="xpad">4</property>
+                        <property name="stock">gtk-cdrom</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkLabel" id="label5">
+                        <property name="visible">True</property>
+                        <property name="xalign">0,000000</property>
+                        <property name="yalign">0,000000</property>
+                        <property name="label" translatable="yes">Truva Linux Kurulumunu Başlat</property>
+                        <property name="use_underline">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="right_attach">2</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+            <property name="x_options">GTK_FILL</property>
+            <property name="y_options"></property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
